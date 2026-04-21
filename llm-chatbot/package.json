@@ -34,5 +34,11 @@
 		"typescript": "^6.0.2",
 		"typescript-eslint": "^8.58.1",
 		"vite": "^8.0.7"
+	},
+	"dependencies": {
+		"@ai-sdk/openai": "^3.0.53",
+		"@ai-sdk/svelte": "^4.0.168",
+		"ai": "^6.0.168",
+		"ollama-ai-provider": "^1.2.0"
 	}
 }
