@@ -1,8 +1,9 @@
 import { streamText, convertToModelMessages } from 'ai';
 import { createOpenAI } from '@ai-sdk/openai';
+import { env } from '$env/dynamic/private';
 
 const ollama = createOpenAI({
-	baseURL: 'http://localhost:11434/v1',
+	baseURL: env.OLLAMA_BASE_URL || 'http://localhost:11434/v1',
 	apiKey: 'ollama',
 	compatibility: 'compatible',
 });
